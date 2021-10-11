@@ -1,8 +1,8 @@
-package ExchangeRateApplication.controller;
+package exchangeService.controller;
 
-import ExchangeRateApplication.model.ResponseBodyObject;
-import ExchangeRateApplication.model.ExchangeRateName;
-import ExchangeRateApplication.model.ExchangeRateObject;
+import exchangeService.model.ResponseBodyObject;
+import exchangeService.model.ExchangeRateName;
+import exchangeService.model.ExchangeRateObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,7 +44,7 @@ public class ExchangeRateController {
 
     }
 
-    @GetMapping("/calculateExchangeValue")
+    @GetMapping("/exchangeRateValue")
     public ResponseEntity<String> getExchangeRateByRecipientCountry(@RequestParam String exchangeRateString,
                                                                           @RequestParam Integer usdCount) throws ParseException {
         // DecimalFormat String to Double

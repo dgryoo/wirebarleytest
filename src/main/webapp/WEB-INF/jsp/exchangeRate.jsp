@@ -38,13 +38,13 @@
         const usdCount = document.getElementById("usdCount").value;
 
         if (!usdCount || usdCount > 10000 || usdCount <= 0) {
-            alert("송금액이 바르지 않습니다")
+            alert("송금액이 바르지 않습니다");
         } else {
             const exchangeRate = document.getElementById("exchangeRate").textContent;
             const sel = document.getElementById("country");
-            const url = "http://localhost:8080/calculateExchangeValue"
-            const exchangeRateCondition = "?exchangeRateString=" + exchangeRate
-            const usdCountCondition = "&usdCount=" + usdCount
+            const url = "http://localhost:8080/exchangeRateValue";
+            const exchangeRateCondition = "?exchangeRateString=" + exchangeRate;
+            const usdCountCondition = "&usdCount=" + usdCount;
             const response = await fetch(url + exchangeRateCondition + usdCountCondition);
             const data = await response.text();
             document.getElementById("exchangeRateValue").textContent =

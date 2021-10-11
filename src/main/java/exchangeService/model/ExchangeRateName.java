@@ -1,7 +1,4 @@
-package ExchangeRateApplication.model;
-
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import org.springframework.web.client.RestTemplate;
+package exchangeService.model;
 
 public enum ExchangeRateName {
 

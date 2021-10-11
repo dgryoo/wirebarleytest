@@ -1,9 +1,12 @@
-package ExchangeRateApplication.model;
+package exchangeService.model;
 
 public class ExchangeRateObject {
     private String recipientRateName;
     private String exchangeRate;
     private String exchangeRateName;
+
+    public ExchangeRateObject() {
+    }
 
     public ExchangeRateObject(String recipientRateName, String exchangeRate, String exchangeRateName) {
         this.recipientRateName = recipientRateName;

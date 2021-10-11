@@ -1,6 +1,5 @@
-package ExchangeRateApplication.model;
+package exchangeService.model;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
 
 public class ResponseBodyObject {
